@@ -40,15 +40,34 @@ if(isset($_REQUEST['usuario']) && isset($_REQUEST['contra'])) {
     <link rel="icon" type="image/x-icon" href="img/logo.png">
     <meta name="theme-color" content="#7952b3">
 </head>
-<body>
+<body id="page-top">
 <?php
 if (isset($_SESSION["iniciar_sesion"])) {
     ?>
-<a href="inicio.php">Inicio</a><br>
-<a href="ingresar-facturas.php">Subir facturas</a><br>
-<a href="ver-facturas.php">Ver facturas</a><br>
-<a href="logout.php">Cerrar sesión</a>
 
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+            <div class="container px-4">
+                <a class="navbar-brand" href="#page-top">Ofideusa</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="ingresar-facturas.php">Ingresar</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ver-facturas.php">Observar</a></li>
+                        <li class="nav-item"><a class="nav-link" href="logout.php">Cerrar sesión</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <div class="p-5 mb-4 bg-light rounded-3">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Ingreso de facturas</h1>
+        <p class="col-md-8 fs-4">En este sistema podrás ingresar, observar y filtrar cualquier factura, con el fin de automatizar el proceso de búsqueda de facturas que son al contado.</p>
+        <a href="ingresar-facturas.php"><button class="btn btn-primary btn-lg" type="button">Agregar factura</button></a>
+        <a href="ver-facturas.php"><button class="btn btn-primary btn-lg" type="button">Ver facturas</button></a>
+      </div>
+    </div>
 <?php
 }
 
