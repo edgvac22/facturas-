@@ -14,6 +14,7 @@
     <link rel="icon" type="image/x-icon" href="logo.png">
     <meta name="theme-color" content="#7952b3">
     <meta name="robots" content="noindex, follow">
+    <script src="https://kit.fontawesome.com/b9d01847cd.js" crossorigin="anonymous"></script>
     <script nonce="cf0e49a8-e506-448f-af55-34beb8bce8f9">(function(w,d){!function(a,e,t,r,z){a.zarazData=a.zarazData||{},a.zarazData.executed=[],a.zarazData.tracks=[],a.zaraz={deferred:[]};var s=e.getElementsByTagName("title")[0];s&&(a.zarazData.t=e.getElementsByTagName("title")[0].text),a.zarazData.w=a.screen.width,a.zarazData.h=a.screen.height,a.zarazData.j=a.innerHeight,a.zarazData.e=a.innerWidth,a.zarazData.l=a.location.href,a.zarazData.r=e.referrer,a.zarazData.k=a.screen.colorDepth,a.zarazData.n=e.characterSet,a.zarazData.o=(new Date).getTimezoneOffset(),a.dataLayer=a.dataLayer||[],a.zaraz.track=(e,t)=>{for(key in a.zarazData.tracks.push(e),t)a.zarazData["z_"+key]=t[key]},a.zaraz._preSet=[],a.zaraz.set=(e,t,r)=>{a.zarazData["z_"+e]=t,a.zaraz._preSet.push([e,t,r])},a.dataLayer.push({"zaraz.start":(new Date).getTime()}),a.addEventListener("DOMContentLoaded",(()=>{var t=e.getElementsByTagName(r)[0],z=e.createElement(r);z.defer=!0,z.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(a.zarazData))),t.parentNode.insertBefore(z,t)}))}(w,d,0,"script");})(window,document);</script></head>
   </head>
   
@@ -25,19 +26,19 @@
     <div class="login100-pic js-tilt" data-tilt>
     <img src="computer.webp" alt="Imágen">
     </div>
-    <form class="login100-form validate-form">
+    <form class="login100-form validate-form" name="login" action="inicio.php" method="post">
     <span class="login100-form-title">
-    Inicio de sesión
+    Iniciar sesión
     </span>
-    <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-    <input class="input100" type="text" name="email" placeholder="Usuario">
+    <div class="wrap-input100 validate-input" data-validate="El email debe ser válido: edgardo@ofideusa.net">
+    <input class="input100" type="text" name="usuario" placeholder="Usuario">
     <span class="focus-input100"></span>
     <span class="symbol-input100">
-    <i class="fa fa-envelope" aria-hidden="true"></i>
+    <i class="fas fa-user" aria-hidden="true"></i>
     </span>
     </div>
-    <div class="wrap-input100 validate-input" data-validate="Password is required">
-    <input class="input100" type="password" name="pass" placeholder="Contraseña">
+    <div class="wrap-input100 validate-input" data-validate="La contraseña es requerida">
+    <input class="input100" type="password" name="contra" placeholder="Contraseña">
     <span class="focus-input100"></span>
     <span class="symbol-input100">
     <i class="fa fa-lock" aria-hidden="true"></i>
